@@ -7,6 +7,8 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" href="https://ionicframework.com/docs">docs</a> will be your guide.</p>
+  Welcome to The Ionic Dictionary 
+  <ion-input [(ngModel)]="myWord"  placeholder="Enter a word" ></ion-input>
+  <ion-button shape="round" color="primary" fill="outline" (click)="getWordDef()" >Get the Def</ion-button>
+  <ion-textarea [(ngModel)]="myWordDef"></ion-textarea>
 </ion-content>
